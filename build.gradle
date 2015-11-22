@@ -24,6 +24,11 @@ dependencies {
 
 sourceSets {
     main.java.srcDirs += 'src/main/kotlin'
+    main.java.srcDirs += 'src/test/kotlin'
 }
 
-mainClassName = 'org.rorschach.depend.MainKt'
+run {
+    main = 'org.rorschach.depend.MainKt'
+    workingDir = './workspace'
+    args 'hoge', 'huga', 'ponyo'
+}
