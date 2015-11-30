@@ -27,6 +27,8 @@ sourceSets {
     main.java.srcDirs += 'src/test/kotlin'
 }
 
+mainClassName = 'org.rorschach.depend.MainKt'
+
 run {
     main = 'org.rorschach.depend.MainKt'
     workingDir = './workspace'
